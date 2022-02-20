@@ -1,3 +1,3 @@
 # learnspring
 
-This is a learning project. We intent to learn git with Spring-Boot
+This is a learning project. We intend to learn git with Spring-Boot
