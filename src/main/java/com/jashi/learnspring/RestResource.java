@@ -2,7 +2,12 @@ package com.jashi.learnspring;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
+
 
 @RestController
 @RequestMapping("/learn")
@@ -21,7 +26,6 @@ public class RestResource {
 
         return new ResponseEntity(name +" Thankyou from pathvariable",HttpStatus.OK);
     }
-
 
     @GetMapping(value = "/printname2")
     public ResponseEntity<String> printName2 (@RequestParam("name") String name) {
